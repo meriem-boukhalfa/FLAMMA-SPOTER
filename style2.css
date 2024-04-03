@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Utilisation d'une police générique */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+main {
+    max-width: 1200px; /* Largeur maximale de la page */
+    margin: 0 auto; /* Centrer le contenu */
+}
+
+.work,
+.products,
+.updates {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    min-width: 300px; /* Largeur minimale des sections */
+    transition: box-shadow 0.3s; /* Transition pour l'ombre */
+    display: block; /* Affichage en bloc pour empiler les sections */
+}
+
+.work:hover,
+.products:hover,
+.updates:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre sur survol */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+nav ul li a {
+    color: white; /* Couleur des liens non visités */
+    text-decoration: none; /* Supprimer la soulignement par défaut */
+}
+
+nav ul li a:hover {
+    color: #ff6714; /* Couleur des liens au survol */
+}
+.work:hover,
+.products:hover,
+.updates:hover {
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5); /* Ombre orange sur survol */
+}
+header h1 {
+    color: #ff6714; /* Définir la couleur du texte en orange */
+}
+header h1 {
+    font-family: Herculanum, sans-serif; /* Utiliser Herculanum s'il est disponible, sinon utiliser une police sans empattement générique */
+}
+footer {
+    font-family: Herculanum, sans-serif;
+}
+.header h1::after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f847"; /* Code Unicode pour l'icône du drone */
+    margin-left: 5px; /* Marge à gauche pour espacer l'icône du texte */
+}
+
+
+
+
+

@@ -1,0 +1,8 @@
+}
+header h1 {
+    font-family: Herculanum, sans-serif; /* Utiliser Herculanum s'il est disponible, sinon utiliser une police sans empattement générique */
+}
+.circle {
+    width: 700px; /* Augmenter la largeur */
+    height: 700px; /* Augmenter la hauteur */
+}

@@ -1,0 +1,25 @@
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* Pour aligner l'image verticalement */
+    align-items: flex-start; /* Pour aligner l'image en haut */
+    position: relative;
+    overflow: hidden;
+}
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    left: -20px; /* Déplace le conteneur de 20 pixels vers la gauche */
+}

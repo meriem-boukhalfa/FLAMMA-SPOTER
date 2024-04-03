@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Contact</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .circle-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .circle {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+            border: 2px solid #333;
+            box-shadow: 0 0 10px orange;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Ajout de la transition pour le changement de couleur */
+        }
+
+        .circle:last-child {
+            margin-right: 0;
+        }
+
+        .circle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px orange;
+            color: orange; /* Changement de couleur au survol */
+        }
+
+        .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            font-size: 32px; /* Augmentez la taille de la police */
+            color: #333;
+            margin: 0 5px; /* Ajustez la marge entre les icônes */
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+        }
+
+        .fab {
+            /* Changer la couleur par défaut des icônes du site de réseau social */
+            color: #007bff;
+            font-size: 48px; /* Ajustez la taille des icônes */
+        }
+
+        footer {
+            font-family: Herculanum, sans-serif; /* Changer la police du footer en Herculanum */
+        }
+
+        p.contact-us {
+            font-family: Phosphate, sans-serif; /* Changer la police de "Contact us" en Phosphate */
+            font-size: 24px; /* Ajustez la taille du texte */
+        }
+
+        .comment {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            transition: bottom 0.5s;
+        }
+
+        .circle:hover .comment {
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FLAMMA SPOTER</h1>
+        <nav>
+            <ul>
+                <li><a href="h.html">Homepage</a></li>
+                <li><a href="fspoter.html">F-SPOTER</a></li>
+                <li><a href="update.html">Update</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <p class="contact-us">Contact us</p> <!-- Changer la police de "Contact us" en Phosphate -->
+        </div>
+        <div class="circle-container">
+            <div class="circle">
+                <img src="photo/me.jpeg" alt="Profile Image" title="Boukhalfa Meriem master2 student">
+                <div class="comment">Boukhalfa Meriem master2 student</div>
+            </div>
+            <div class="circle">
+                <img src="photo/kh.jpg" alt="Another Image" title="Khaled Arbateni Class A lecturer ">
+                <div class="comment">Arbateni Khaled Class A lecturer</div>
+            </div>
+        </div>
+        <div class="footer-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 FLAMMA SPOTER Designed By Boukhalfa Meriem</p>
+    </footer>
+</body>
+</html>
+
+
+

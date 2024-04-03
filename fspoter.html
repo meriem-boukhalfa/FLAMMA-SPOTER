@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Blank Page</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style4.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Pour que le contenu pousse le footer vers le bas */
+        }
+
+        header {
+            position: relative;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto; /* Pour pousser le footer vers le bas */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .square img {
+            max-width: 100%;
+            max-height: 100%;
+            transition: transform 0.5s;
+        }
+
+        .square:hover img {
+            transform: scale(1.1);
+        }
+
+        .comment {
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            transition: bottom 0.5s;
+        }
+
+        .square:hover .comment {
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FLAMMA SPOTER</h1>
+        <nav>
+            <ul>
+                <li><a href="h.html">Homepage</a></li>
+                <li><a href="fspoter.html">F-SPOTER</a></li>
+                <li><a href="update.html">Update</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="square">
+                <img src="photo/icon.jpeg" alt="icon" title="flamma spoter icon">
+                <div class="comment">flamma's icon</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 FLAMMA SPOTER - Designed By Boukhalfa Meriem</p>
+    </footer>
+</body>
